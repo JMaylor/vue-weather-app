@@ -39,7 +39,7 @@ export default {
 	},
 	data () {
 		return {
-			api_key: process.env.VUE_APP_API_KEY,
+			api_key: process.env.VUE_APP_APIKEY,
 			url_base: 'https://api.weatherapi.com/v1/forecast.json?key=',
 			query: 'London',
 			weather: {},
