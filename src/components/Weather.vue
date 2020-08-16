@@ -39,7 +39,7 @@ export default {
 	},
 	data () {
 		return {
-			// api_key: '75ee3f3deef5491fad395354200108',
+			api_key: process.env.VUE_APP_API_KEY,
 			url_base: 'https://api.weatherapi.com/v1/forecast.json?key=',
 			query: 'London',
 			weather: {},
@@ -50,7 +50,7 @@ export default {
 			document.querySelector('.search-bar').value = '';
 		},
 		fetchWeather () {
-			fetch(`${this.url_base}${process.env.VUE_APP_API_KEY}&q=${this.query}&days=3`)
+			fetch(`${this.url_base}${this.api_key}&q=${this.query}&days=3`)
 				.then(res => res.json())
 				.then(json => {
 					this.weather = json;
