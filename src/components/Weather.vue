@@ -40,7 +40,7 @@ export default {
 	data () {
 		return {
 			// api_key: '75ee3f3deef5491fad395354200108',
-			url_base: 'http://api.weatherapi.com/v1/forecast.json?key=',
+			url_base: 'https://api.weatherapi.com/v1/forecast.json?key=',
 			query: 'London',
 			weather: {},
 		}
