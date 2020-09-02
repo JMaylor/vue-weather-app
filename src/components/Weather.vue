@@ -50,6 +50,7 @@ export default {
 			document.querySelector('.search-bar').value = '';
 		},
 		fetchWeather () {
+			console.log(process.env.VUE_APP_APIKEY)
 			fetch(`${this.url_base}${this.api_key}&q=${this.query}&days=3`)
 				.then(res => res.json())
 				.then(json => {
