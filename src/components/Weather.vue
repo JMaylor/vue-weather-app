@@ -18,7 +18,7 @@
 				</div>
 	
 				<div class="weather-box">
-					<div class="temp">{{ Math.round(weather.forecast.forecastday[0].day.avgtemp_c,0) }}°C</div>
+					<div class="temp">{{ Math.round(weather.current.temp_c,0) }}°C</div>
 					<div class="weather">{{ weather.current.condition.text }}</div>
 				</div>
 			</div>
@@ -53,6 +53,7 @@ export default {
 			fetch(`${this.url_base}${this.api_key}&q=${this.query}&days=3`)
 				.then(res => res.json())
 				.then(json => {
+					console.log(json);
 					this.weather = json;
 					this.query = '';
 					const date = new Date(this.weather.current.last_updated);
