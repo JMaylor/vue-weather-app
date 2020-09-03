@@ -109,7 +109,7 @@ template {
 main {
 	text-align: center;
 	font-family: "montserrat", sans-serif;
-	background-image: url("~@/assets/night-clear.jpg");
+	background-image: url("https://images.unsplash.com/photo-1573166331058-c9e7ef82687d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80");
 	background-size: cover;
 	background-position: center;
 	transition: 0.4s;
@@ -175,7 +175,7 @@ main[class*="clear"][class$="0"] {
 }
 
 .sunny-1 {
-	background-image: url("https://images.unsplash.com/photo-1488654370674-7624e5c1d225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=680&q=80");
+	background-image: url("https://images.unsplash.com/photo-1595174279427-74191a9e2a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 .search-box .search-bar {
