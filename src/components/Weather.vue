@@ -119,63 +119,63 @@ main {
 
 /* day-thunder */
 main[class*="thunder"][class$="1"] {
-	background-image: url("~@/assets/day-thunder.jpg");
+	background-image: url("https://images.unsplash.com/photo-1579004464832-0c014afa448c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 /* day-snow */
 main[class*="snow"][class$="1"], main[class*="sleet"][class$="1"], main[class*="blizzard"][class$="1"], main[class*="ice"][class$="1"] {
-	background-image: url("~@/assets/day-snow.jpg");
+	background-image: url("https://images.unsplash.com/photo-1516820208784-270b250306e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80");
 }
 
 /* day-fog */
 main[class*="fog"][class$="1"], main[class*="mist"][class$="1"] {
-	background-image: url("~@/assets/day-fog.jpg");
+	background-image: url("https://images.unsplash.com/photo-1510596713412-56030de252c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
 }
 
 /* day-rain */
 main[class*="rain"][class$="1"], main[class*="drizzle"][class$="1"] {
-	background-image: url("~@/assets/day-rain.jpg");
+	background-image: url("https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80");
 }
 
 /* day-cloudy */
 main[class*="cloudy"][class$="1"], main[class*="overcast"][class$="1"] {
-	background-image: url("~@/assets/day-cloudy.jpg");
+	background-image: url("https://images.unsplash.com/photo-1527708676371-14f9a9503c95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
 }
 
 /* day-sun is default */
 
 /* night-thunder */
 main[class*="thunder"][class$="0"] {
-	background-image: url("~@/assets/night-thunder.jpg");
+	background-image: url("https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
 }
 
 /* night-snow */
 main[class*="snow"][class$="0"], main[class*="sleet"][class$="0"], main[class*="blizzard"][class$="0"], main[class*="ice"][class$="0"] {
-	background-image: url("~@/assets/night-snow.jpg");
+	background-image: url("https://images.unsplash.com/photo-1547242651-45e06cae2491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
 }
 
 /* night-fog */
 main[class*="fog"][class$="0"], main[class*="mist"][class$="0"] {
-	background-image: url("~@/assets/night-fog.jpg");
+	background-image: url("https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 /* night-rain */
 main[class*="rain"][class$="0"], main[class*="drizzle"][class$="0"] {
-	background-image: url("~@/assets/night-rain.jpg");
+	background-image: url("https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
 }
 
 /* night-cloudy */
 main[class*="cloudy"][class$="0"], main[class*="overcast"][class$="0"] {
-	background-image: url("~@/assets/night-cloudy.jpg");
+	background-image: url("https://images.unsplash.com/photo-1479156661942-92cd989cdb56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
 /* night-clear */
 main[class*="clear"][class$="0"] {
-	background-image: url("~@/assets/night-clear.jpg");
+	background-image: url("https://images.unsplash.com/photo-1573166331058-c9e7ef82687d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80");
 }
 
 .sunny-1 {
-	background-image: url("~@/assets/day-sunny.jpg");
+	background-image: url("https://images.unsplash.com/photo-1488654370674-7624e5c1d225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=680&q=80");
 }
 
 .search-box .search-bar {
