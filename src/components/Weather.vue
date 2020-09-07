@@ -208,7 +208,7 @@
 
 	/* day-thunder */
 	main[class*="thunder"][class$="1"] {
-		background-image: url("https://images.unsplash.com/photo-1579004464832-0c014afa448c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+		background-image: url("https://images.unsplash.com/photo-1579004464832-0c014afa448c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80");
 	}
 
 	/* day-snow */
@@ -228,7 +228,7 @@
 	/* day-rain */
 	main[class*="rain"][class$="1"],
 	main[class*="drizzle"][class$="1"] {
-		background-image: url("https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80");
+		background-image: url("https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80");
 	}
 
 	/* day-cloudy */
@@ -255,7 +255,7 @@
 	/* night-fog */
 	main[class*="fog"][class$="0"],
 	main[class*="mist"][class$="0"] {
-		background-image: url("https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+		background-image: url("https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80");
 	}
 
 	/* night-rain */
@@ -267,7 +267,7 @@
 	/* night-cloudy */
 	main[class*="cloudy"][class$="0"],
 	main[class*="overcast"][class$="0"] {
-		background-image: url("https://images.unsplash.com/photo-1479156661942-92cd989cdb56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+		background-image: url("https://images.unsplash.com/photo-1479156661942-92cd989cdb56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80");
 	}
 
 	/* night-clear */
@@ -276,7 +276,7 @@
 	}
 
 	.sunny-1 {
-		background-image: url("https://images.unsplash.com/photo-1595174279427-74191a9e2a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+		background-image: url("https://images.unsplash.com/photo-1595174279427-74191a9e2a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80");
 	}
 
 	.shader {
