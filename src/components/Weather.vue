@@ -170,7 +170,10 @@
 					this.query = `${lat},${long}`;
 					this.fetchWeather();
 				},
-				console.log,
+				() => {
+					this.query = 'London';
+					this.fetchWeather();
+				},
 				{
 					enableHighAccuracy: true,
 					maximumAge: 0,
