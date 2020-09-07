@@ -2,11 +2,21 @@
 	<main
 		:class="typeof weather.location != 'undefined' ? weather.current.condition.text.toLowerCase().replace(/\s+/g, '-') + '-' + weather.current.is_day : ''"
 	>
-		<div class="shader">
+		<div class="shader p-0">
+			<p class="text-white mb-0">
+				made by
+				<a href="https://maylor.io" target="_blank" class="text-white">maylor.io</a>
+			</p>
 			<b-container class="text-light">
 				<b-row class="justify-content-center">
 					<b-col cols="12" sm="10" md="8" lg="5" xl="4">
-						<b-input type="text" placeholder="Search..." v-model="query" @keypress.enter="fetchWeather"></b-input>
+						<b-input
+							id="search-bar"
+							type="text"
+							placeholder="Search..."
+							v-model="query"
+							@keypress.enter="fetchWeather"
+						></b-input>
 					</b-col>
 				</b-row>
 			</b-container>
@@ -97,8 +107,9 @@
 				</b-row>
 			</b-container>
 
-			<b-navbar fixed="bottom" class="justify-content-center detail-card">
-				Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+			<b-navbar fixed="bottom" class="text-light justify-content-center detail-card">
+				Powered by
+				<a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
 			</b-navbar>
 		</div>
 	</main>
@@ -123,6 +134,9 @@
 				document.querySelector(".search-bar").value = "";
 			},
 			fetchWeather() {
+				if (this.query == "") {
+					return null;
+				}
 				fetch(`${this.url_base}${this.api_key}&q=${this.query}&days=3`)
 					.then((res) => res.json())
 					.then((json) => {
@@ -163,36 +177,12 @@
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 
-	.divider {
-		border-color: #f8f9fa;
-	}
-
-	.svg-inline--fa {
-		font-size: 30px;
-	}
-
-	.detail-card {
-		background: rgba(255, 255, 255, 0.164);
-		border-radius: 5px;
-		padding: 5px;
-	}
-
-	.detail-label {
-		font-size: 14px;
-	}
-
 	* {
 		font-family: "Quicksand", sans-serif;
 	}
 
 	template {
 		margin: 0;
-	}
-
-	.shader {
-		min-height: 100vh;
-		padding: 25px;
-		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 	main {
@@ -277,6 +267,37 @@
 
 	.sunny-1 {
 		background-image: url("https://images.unsplash.com/photo-1595174279427-74191a9e2a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+	}
+
+	.shader {
+		min-height: 100vh;
+		padding: 25px;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	#search-bar {
+		border-radius: 16px 0px 16px 0px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+	#search-bar:focus {
+		border-radius: 0px 16px 0px 16px;
+		box-shadow: 0px 0px 10px white;
+	}
+
+	.svg-inline--fa {
+		font-size: 30px;
+	}
+
+	.detail-card {
+		background: rgba(255, 255, 255, 0.164);
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+	.detail-label {
+		font-size: 14px;
 	}
 
 	.credits {
