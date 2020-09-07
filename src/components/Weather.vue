@@ -29,7 +29,7 @@
 				</b-row>
 
 				<b-row class="mb-5">
-					<b-col>Sat, 7:30pm</b-col>
+					<b-col>{{ formatDate() }}</b-col>
 				</b-row>
 
 				<b-row class="justify-content-center">
@@ -116,6 +116,8 @@
 </template>
 
 <script>
+	const moment = require('moment');
+
 	export default {
 		name: "Weather",
 		props: {
@@ -146,11 +148,16 @@
 							this.weather = json;
 						}
 						this.query = "";
+						this.formatDate();
 					})
 					.catch((err) => {
 						console.log(err);
 					});
 			},
+			formatDate() {
+				const m = new moment(this.weather.current.last_updated);
+				return m.format("ddd, h:mm A");
+			}
 		},
 		beforeMount() {
 			window.navigator.geolocation.getCurrentPosition(
